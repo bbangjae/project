@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+  <mapper namespace="com.spring_boot_mybatis.project.dao.IMemberDAO">
+  
+  <!-- 로그인 체크 -->
+  <select id="loginCheck" parameterType="hashmap" resultType="string"><!--  두개이상은 hashmap으로 -->
+  
+  select memId from member where memId = #{id} And memPwd=#{pwd}<!--  js 파일에서넘ㄱ;ㅁ -->
+  
+  
+  
+  
+  
+  </select>
+  
+  
+  </mapper>
